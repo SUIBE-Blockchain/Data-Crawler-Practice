@@ -44,7 +44,7 @@ class Spider:
                     content_list.append(text)
 
 
-        next_url=requests.get('https://m.weibo.cn/api/container/getIndex?sudaref=login.sina.com.cn&display=0&retcode=6102&type=uid&value=1784473157&containerid=1076031784473157&since_id={}'.format(since_id))
+        next_url='https://m.weibo.cn/api/container/getIndex?sudaref=login.sina.com.cn&display=0&retcode=6102&type=uid&value=1784473157&containerid=1076031784473157&since_id={}'.format(since_id)
         return content_list,next_url
 
     def run(self):
